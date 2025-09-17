@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.white {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.fontXL {
+    font-size: 1.5rem;
+}
+
+.fontLg {
+    font-size: 1.2rem;
+}
+
+.fontMd {
+    font-size: 1rem;
+}
+
+.fontSm {
+    font-size: .9rem;
+}
+
+.fontXs {
+    font-size: .85rem;
+}
+
+.grey-bg {
+    background-color: rgb(232, 234, 240);
+
+}
+
+.rounded-bg {
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+#container {
+    grid-template: 1fr 5fr / 250px 1fr;
+    grid-template-areas:
+        "side head"
+        "side main"
+        "credit credit"
+    ;
+    height: 100vh;
+    display: grid;
+}
+
+#sidebar {
+    display: grid;
+    grid-template-rows: repeat(3, min-content) auto;
+    grid-area: side;
+    gap: 50px;
+    padding: 25px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+}
+
+.nav-link {
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon-2-col {
+    grid-template-columns: 2.5rem auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    z-index: 1;
+    grid-area: head;
+    padding: 25px 2.5rem 15px;
+    gap: 25px;
+    background-color: #100C08;
+    color: white;
+}
+
+#main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 3fr 1fr;
+    padding: 1.5rem 1rem;
+    gap: 25px;
+    background-color: #111111;
+    color: white;
+}
+
+#sidebar li {
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+#sidebar .icon {
+    justify-self: center;
+}
+
+#title {
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+#title .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#search {
+    border: 2px solid cyan;
+    border-radius: 20px;
+    width: 100%;
+    height: 25px;
+    font-size: 1rem;    
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.big {
+    width: 4rem;
+    height: 4rem;
+}
+
+.pad-left {
+    padding-left: 20px;
+}
+
+#header-user {
+    justify-self: end;
+}
+
+#header-search {
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+#header-btns {
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-self: end;
+}
+
+.button {
+    width: 6rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #0FFFFF;
+    font-weight: bold;
+    color: black;
+}
+
+#main h2 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    display: grid;
+    background-color: #222222;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1); 
+}
+
+#projects ul {
+    grid-template: repeat(3, auto) / 1fr 1fr;
+    gap: 25px;
+}
+
+#projects li {
+    border-left: .6rem solid #0FFFFF;
+    grid-template-rows: repeat(2, min-content) auto;
+}
+
+#announcements {
+    margin-bottom: 2.5rem;
+    font-size: .9rem;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #222222;
+}
+
+#announcements li {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(98, 98, 98);
+    margin: 1rem;
+}
+
+#announcements li:last-child {
+    border: none;
+    padding-bottom: 0   ;
+}
+
+#trending {
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-size: .9rem;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #222222;
+}
+
+.react {
+    margin-top: 1.1rem;
+    align-self: end;
+    justify-self: end;
+    word-spacing: 1.2rem;
+}
